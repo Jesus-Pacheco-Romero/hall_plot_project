@@ -68,5 +68,5 @@ Una vez generados los análisis, los datos pueden ser descargados en formato **C
 ## 📌 Contacto y soporte
 Si tienes preguntas o sugerencias, puedes contactarme en **LinkedIn** o abrir un **issue** en el repositorio.
 
-🚀 **Desarrollado por** [Jesús Pacheco](https://www.linkedin.com/in/jesus-pacheco/)
+🚀 **Desarrollado por** [Jesús Pacheco]([https://www.linkedin.com/in/jesus-pacheco/](https://www.linkedin.com/in/jes%C3%BAs-p-7897b5162/))
 
