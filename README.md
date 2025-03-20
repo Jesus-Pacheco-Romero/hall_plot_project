@@ -21,20 +21,14 @@ hall_plot_project/
 │── README.md                    # Descripción del proyecto
 │
 ├── data/                        # Carpeta para archivos CSV
-│   ├── inyeccion.csv            # Archivo con datos de inyección
-│   ├── pmp_presion.csv          # Archivo con datos de PMP y presión de yacimiento
+│   ├── inyeccion_diaria.csv            # Archivo con datos de inyección
+│   ├── data_estatica.csv          # Archivo con datos de PMP y presión de yacimiento
 │
 ├── scripts/                     # Código modular de funciones
 │   ├── __init__.py              # Permite importar módulos
 │   ├── graphs.py                # Clases y funciones para gráficos
 │   ├── hall_plot.py             # Clases y funciones para cálculos de Hall Plot
-│
-├── assets/                      # Carpeta para imágenes y otros recursos
-│   ├── logo.png                 # Imagen del logo
-│
-└── utils/                        # Carpeta para funciones auxiliares
-    ├── __init__.py              # Permite importar módulos
-    ├── data_loader.py           # Funciones para cargar los datos
+
 ```
 
 ---
