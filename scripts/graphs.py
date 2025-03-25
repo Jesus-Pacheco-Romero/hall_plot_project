@@ -88,7 +88,7 @@ class Graficos:
                 name='hall',
                 line=dict(width=2,color='blue'),
                 customdata= self.df[["FECHA_FORMAT", 'acumulado_wi','acumulado_delta_presion']],
-                hovertemplate="Fecha :%{customdata[0]}<br> aum_wi:% {customdata[1]:,0f}, acu_delta_p: %{customdata[2]:,0f}" 
+                hovertemplate="Fecha :%{customdata[0]}<br> aum_wi:%{customdata[1]:,0f}, acu_delta_p: %{customdata[2]:,0f}" 
             )
         )
 
@@ -101,7 +101,7 @@ class Graficos:
                 name='Dhi',
                 line=dict(width=1, color='orange'),
                 customdata= self.df[["FECHA_FORMAT", 'acumulado_wi','derivada_']],
-                hovertemplate="Fecha :%{customdata[0]}<br>  aum_wi:% {customdata[1]:,0f} , derivada: %{customdata[1]:,0f} psi"    
+                hovertemplate="Fecha :%{customdata[0]}<br>  aum_wi:%{customdata[1]:,0f} , derivada: %{customdata[2]:,0f}"    
             )
         )
 
