@@ -77,6 +77,14 @@ if file and file_pmp:
     )
     st.plotly_chart(fig, use_container_width=True)
 
+     # 📌 Crear y mostrar el gráfico principal
+    fig_ = graficos.grafico_1()
+    fig_.update_layout(
+        xaxis=dict(title="Fecha"),
+        yaxis=dict(title="Agua Inyectada BWIPD"),
+    )
+    st.plotly_chart(fig_, use_container_width=True)
+
     # 📌 Mostrar tabla de datos en un `st.expander`
     with st.expander("📄 Ver Datos del Inyector"):
         st.dataframe(hall_df[['POZO', 'FECHA', 'AGUA_INYECTADA', 'PIA', 'acumulado_wi', 'acumulado_delta_presion', 'derivada_']].reset_index(drop=True))
