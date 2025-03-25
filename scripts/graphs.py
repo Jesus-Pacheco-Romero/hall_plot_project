@@ -86,7 +86,8 @@ class Graficos:
                 y=self.df['acumulado_delta_presion'],
                 mode='lines',
                 name='hall',
-                line=dict(width=2,color='blue')
+                line=dict(width=2,color='blue'),
+                hovertemplate="Fecha :%{customdata[0]}<br> acu,_delta_p: %{customdata[1]:,0f} psi" 
             )
         )
 
@@ -97,7 +98,8 @@ class Graficos:
                 y=self.df['derivada_'],
                 mode='markers',
                 name='Dhi',
-                line=dict(width=1, color='orange')    
+                line=dict(width=1, color='orange'),
+                hovertemplate="Fecha :%{customdata[0]}<br> derivada: %{customdata[1]:,0f} psi"    
             )
         )
 
