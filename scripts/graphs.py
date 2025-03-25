@@ -53,12 +53,15 @@ class Graficos:
         )
 
         #Configura el eje x 
-        fig.update_xaxes(title_text="Fecha", tickformat="%b-%Y" , dtick='M3', tickangle=90)
+        fig.update_xaxes(title_text="Fecha", tickformat="%b-%Y" , dtick='M6', tickangle=90)
 
 
         # Configurar ejes y
-        fig.update_yaxes(title_text="Agua inyectada BWIPD", secondary_y=False)
-        fig.update_yaxes(title_text="PResión de Inyección psi", secondary_y=True)
+        fig.update_yaxes(title_text="Agua inyectada BWIPD", secondary_y=False,showgrid=True)
+        fig.update_yaxes(title_text="Presión de Inyección psi", secondary_y=True,showgrid=False)
+
+        fig.update_xaxes(title_text="Fecha", showgrid=True, gridcolor='lightgrey')
+      
 
         fig.update_layout(title_text= f"Agua Inyectada-Presión de Inyección vs Tiempo",
                           width=800,height=800)
