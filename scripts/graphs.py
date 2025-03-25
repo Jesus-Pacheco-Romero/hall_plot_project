@@ -45,7 +45,7 @@ class Graficos:
                 y=self.df['PIA'],
                 name="Presión de Inyección",
                 mode='lines',
-                line=dict(color="red", width=2, dash='dot'),
+                line=dict(color="red", width=2),
                 customdata=self.df[['FECHA_FORMAT','PIA']],
                 hovertemplate="Fecha :%{customdata[0]}<br> Presión: %{customdata[1]:,0f} psi"
             ),
@@ -61,7 +61,7 @@ class Graficos:
         fig.update_yaxes(title_text="PResión de Inyección psi", secondary_y=True)
 
         fig.update_layout(title_text= f"Agua Inyectada-Presión de Inyección vs Tiempo",
-                          width=1200,height=800)
+                          width=800,height=800)
         
         
 
