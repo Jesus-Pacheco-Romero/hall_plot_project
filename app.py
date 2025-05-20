@@ -33,7 +33,7 @@ if file and file_pmp:
     estatica = pd.read_csv(file_pmp)
 
     # 📌 Convertir columna fecha a formato datetime
-    df['FECHA'] = pd.to_datetime(df['FECHA'], format="%d/%m%/Y")
+    df['FECHA'] = pd.to_datetime(df['FECHA'], format="%d/%m/%Y")
 
     # 📌 Lista de inyectores
     inyector_list = df['POZO'].unique().tolist()
